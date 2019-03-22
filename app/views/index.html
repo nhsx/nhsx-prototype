@@ -1,0 +1,51 @@
+<!-- 
+ADDING CUSTOM CSS
+Add your custom CSS/Sass to /app/assets/sass/main.scss
+-->
+
+
+<!-- Extends the layout from /app/views/layouts/layout.html -->
+{% extends 'layouts/layout.html' %}
+
+<!-- Set the page title inside this block -->
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+<!-- Breadcrumb goes inside this block -->
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1>
+        NHS.UK prototype kit
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom">Version {{version}}</span>
+      </h1>
+
+      <!-- Add your content here -->
+
+      <p class="nhsuk-body-l">This kit lets you rapidly create HTML prototypes of NHS services.</p>
+
+      <h2 class="nhsuk-heading-m">About this page</h2>
+
+      <p>Use this page as the index for your project.</p>
+      
+      <p>You'll find this page in the kit at <strong>/app/views/index.html</strong>.</p>
+
+      <h2 class="nhsuk-heading-m">Examples and documentation</h2>
+
+      <ul>
+        <li><a href="/docs">Example pages and documentation</a></li>
+        <li><a href="https://beta.nhs.uk/service-manual/styles-components-patterns">NHS digital service manual</a>
+        </li>
+      </ul>
+
+      <!-- End of content -->
+
+    </div>
+  </div>
+{% endblock %}

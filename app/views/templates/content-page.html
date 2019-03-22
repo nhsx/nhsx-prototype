@@ -1,0 +1,106 @@
+{% extends 'layouts/layout-nhsuk.html' %}
+
+{% block pageTitle %}
+  Content page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>
+        Page heading goes here
+      </h1>
+
+      <p class="nhsuk-body-l">
+        Visit the 
+          <a href="https://beta.nhs.uk/service-manual/">NHS digital service manual</a> 
+        for guidance and examples.
+      </p>
+
+      <figure class="nhsuk-image">
+        <img class="nhsuk-image__img" src="/images/placeholder-image-16-9.jpg" alt="A 16:9 image placeholder">
+        <figcaption class="nhsuk-image__caption">
+          Image example
+        </figcaption>
+      </figure>
+
+      <h2>Level heading two</h2>
+
+      {{ list({
+        "title": "Do",
+        "type": "tick",
+        "items": [
+          {
+            "item": "cover blisters that are likely to burst with a soft plaster or dressing"
+          },
+          {
+            "item": "wash your hands before touching a burst blister"
+          },
+          {
+            "item": "allow the fluid in a burst blister to drain before covering it with a plaster or dressing"
+          }
+        ]
+      }) }}
+
+      {{ list({
+        "title": "Don't",
+        "type": "cross",
+        "items": [
+          {
+            "item": "burst a blister yourself"
+          },
+          {
+            "item": "peel the skin off a burst blister"
+          },
+          {
+            "item": "pick at the edges of the remaining skin"
+          },
+          {
+            "item": "wear the shoes or use the equipment that caused your blister until it heals"
+          }
+        ]
+      }) }}
+
+      <h3>
+        Level heading three
+      </h3>
+
+      <p>
+        Body text:
+      </p>
+
+      <ul>
+        <li>
+          The quick brown
+        </li>
+        <li>
+          fox jumps over
+        </li>
+        <li>
+          the lazy dog
+        </li>
+      </ul>
+
+      {{ warningCallout({
+        "heading": "School, nursery or work",
+        "HTML": "<p>Stay away from school, nursery or work until all the spots have crusted over. This is usually 5 days after the spots first appeared.</p>"
+      }) }}
+
+      {{ reviewDate({
+        "lastReview": "12 February 2017",
+        "nextReview": "1 February 2020"
+      }) }}
+
+    </div>  
+
+  </div>
+{% endblock %}
