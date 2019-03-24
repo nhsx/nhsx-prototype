@@ -46,11 +46,9 @@
       {% block beforeContent %}{% endblock %}
 
       {% block main %}
-        <div class="nhsuk-width-container">
-          <main class="nhsuk-main-wrapper {{ mainClasses }}" id="main-content" role="main">
+
             {% block content %}{% endblock %}
-          </main>
-        </div>
+
       {% endblock %}
 
       {% block footer %}
