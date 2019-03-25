@@ -1,0 +1,83 @@
+<!-- 
+ADDING CUSTOM CSS
+Add your custom CSS/Sass to /app/assets/sass/main.scss
+-->
+
+
+<!-- Extends the layout from /app/views/layouts/layout.html -->
+{% extends 'layouts/layout-3.html' %}
+
+<!-- Set the page title inside this block -->
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+<!-- Breadcrumb goes inside this block -->
+
+
+{% block content %}
+          <main class="nhsuk-main-wrapper {{ mainClasses }} nhsuk-main-home " id="main-content" role="main">
+
+
+
+<section>
+<div class="nhsuk-width-container nhsuk-u-margin-top-2">
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+  <p class="nhsuk-body-s "><a href="/prototype-3/version-2-home">Home</a></p>
+    <h1 class="nhsuk-u-padding-top-4">How we work</h1>
+            <p class="nhsuk-body-l ">NHSX is a new unit that will drive forward the digital transformation of health and care. </p>
+
+
+
+        <p><a href="/prototype-2/version-2-here-to-do">Find out what we’re here to do</a></p>
+
+
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+
+  </div>
+</div>
+</div>
+
+
+
+</section>
+
+
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="nhsuk-width-container">
+
+
+        <div class="nhsuk-grid-row">
+
+        </div>
+
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+    </div>
+  </div>
+</section>
+  </main>
+
+  
+  </div>
+{% endblock %}

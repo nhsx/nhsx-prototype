@@ -1,0 +1,132 @@
+<!-- 
+ADDING CUSTOM CSS
+Add your custom CSS/Sass to /app/assets/sass/main.scss
+-->
+
+
+<!-- Extends the layout from /app/views/layouts/layout.html -->
+{% extends 'layouts/layout-2.html' %}
+
+<!-- Set the page title inside this block -->
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+<!-- Breadcrumb goes inside this block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+
+  ],
+  href: "/prototype-2/version-2-home",
+  text: "Home"
+}) }}
+{% endblock %}
+
+{% block content %}
+          <main class="nhsuk-main-wrapper {{ mainClasses }} nhsuk-main-home " id="main-content" role="main">
+
+
+
+<section>
+<div class="nhsuk-width-container nhsuk-u-margin-top-8">
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <h1>Key information and tools</h1>
+            <p class="nhsuk-body-l ">lede tbc </p>
+
+        <p>NHSX will set national policy and develop and mandate standards and guidance, for example, on user experience, open standards, information governance, and open source. 
+        <p>We will be working with our partners to bring together and align existing resources and develop new ones so that’s it’s easy for commissioners, developers and, service designers to find all the information they need in the same place. 
+        <p>Here are some of the existing information and tools.</p> 
+
+
+<h2>Key information</h2>
+<ul>
+<li><a href="https://www.gov.uk/government/publications/the-future-of-healthcare-our-vision-for-digital-data-and-technology-in-health-and-care/the-future-of-healthcare-our-vision-for-digital-data-and-technology-in-health-and-care">The future of healthcare: our vision for digital, data and technology in health and care (Department of Health and Social Care, October 2018)</a></li>
+<li>The <a href="https://www.longtermplan.nhs.uk/">NHS long term plan</a> (January 2019)</li>
+</ul>
+
+<h3>Resources</h3>
+
+<p><a href="https://www.england.nhs.uk/digitaltechnology/">Digital transformation</a> (NHS England) - includes:</p>
+<ul>
+<li>empowering people</li>
+<li>connected digital systems</li>
+<li>the NHS Digital Academy</li>
+<li>digital primary care</li>
+<li>the digital child health transformation programme </li>
+<li>the open source programme</li>
+</ul>
+
+
+<p><a href="https://developer.nhs.uk/">NHS developer network</a> (NHS Digital) - technical information, software tools, source code and data for developers who are designing and building software for use in health and social care.</p>
+
+<p><a href="https://beta.nhs.uk/service-manual/">NHS digital service manual</a> (NHS.UK) - helps NHS teams design and build consistent, usable digital services that put people first. It includes:</p>
+<ul>
+<li>the NHS.UK frontend library</li>
+<li>prototyping kit</li>
+<li>design principles</li>
+<li>UI styles, patterns and components</li>
+<li>content style guide</li>
+<li>accessibility and other practice guidance</li>
+</ul>
+
+<p><a href="https://www.nhs.uk/transformation/">Transforming digital health</a> (NHS.UK) - presentations, updates, discussion forums and other resources from the Empower the Person programme</p>  
+
+<h3>Blogs and updates</h3>
+<ul>
+<li><a href="https://digitalhealth.blog.gov.uk/">Digital health and social care blog</a> (GOV.UK)</li>
+<li><a href="https://digital.nhs.uk/blog/transformation-blog">Digital transformation blog</a> (NHS Digital)</li>
+<li><a href="https://healthtech.blog.gov.uk/">Technology in the NHS blog</a> (GOV.UK)</li>
+</ul>
+
+
+
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+
+  </div>
+</div>
+</div>
+
+
+
+</section>
+
+
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="nhsuk-width-container">
+
+
+        <div class="nhsuk-grid-row">
+
+        </div>
+
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+    </div>
+  </div>
+</section>
+  </main>
+
+  
+  </div>
+{% endblock %}
