@@ -26,6 +26,36 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
   <div class="nhsuk-grid-column-two-thirds">
   <p class="nhsuk-body-s "><a href="/prototype-3/version-2-home">Home</a></p>
     <h1 class="nhsuk-u-padding-top-4">What we do</h1>
+
+    {{ contentsList({
+  items: [
+    {
+      href: "/prototype-3/version-2-background",
+      text: "Background"
+    },
+    {
+      href: "/prototype-3/version-2-what-we-do",
+      text: "What we do",
+      current: "true"
+    },
+    {
+      href: "/prototype-3/version-2-how-we-work",
+      text: "How we work"
+    }
+    ,
+    {
+      href: "/prototype-3/version-2-key-information",
+      text: "Key information and tools"
+    }
+    ,
+    {
+      href: "/prototype-3/version-2-get-involved",
+      text: "Get involved"
+    }
+  ]
+}) }}
+
+
             <p class="nhsuk-body-l ">We’re here to improve patient care and outcomes by giving NHS patients and staff the technology they need. </p>
 
             <p>We’ll do this by:</p>

@@ -35,6 +35,35 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
   <div class="nhsuk-grid-column-two-thirds">
   <p class="nhsuk-body-s "><a href="/prototype-3/version-2-home">Home</a></p>
     <h1 class="nhsuk-u-padding-top-4">Background</h1>
+
+    {{ contentsList({
+  items: [
+    {
+      href: "/prototype-3/version-2-background",
+      text: "Background",
+      current: "true"
+    },
+    {
+      href: "/prototype-3/version-2-what-we-do",
+      text: "What we do"
+    },
+    {
+      href: "/prototype-3/version-2-how-we-work",
+      text: "How we work"
+    }
+    ,
+    {
+      href: "/prototype-3/version-2-key-information",
+      text: "Key information and tools"
+    }
+    ,
+    {
+      href: "/prototype-3/version-2-get-involved",
+      text: "Get involved"
+    }
+  ]
+}) }}
+
             <p class="nhsuk-body-l ">NHSX is a new unit that will drive forward the digital transformation of health and care. </p>
 
             <p>The digital transformation of the NHS is the most important change we will make to the healthcare system for the next decade. It will:</p>
