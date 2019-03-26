@@ -1,0 +1,340 @@
+<!-- 
+ADDING CUSTOM CSS
+Add your custom CSS/Sass to /app/assets/sass/main.scss
+-->
+
+
+<!-- Extends the layout from /app/views/layouts/layout.html -->
+{% extends 'layouts/layout-3.html' %}
+
+<!-- Set the page title inside this block -->
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+<!-- Breadcrumb goes inside this block -->
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+          <main class="nhsuk-main-wrapper {{ mainClasses }} nhsuk-main-home nhsuk-u-margin-bottom-0 nhsuk-u-padding-bottom-0" id="main-content" role="main">
+
+                <section class="nhsuk-hero">
+                <div class="nhsuk-width-container nhsuk-hero--border">
+                    <div class="nhsuk-grid-row">
+                    <div class="nhsuk-grid-column-two-thirds">
+                        <div class="nhsuk-hero__wrapper">
+                        <h1 class="nhsuk-u-margin-bottom-3">We’re here to improve patient care and health outcomes</h1>
+                        <p class="nhsuk-body-l nhsuk-u-margin-bottom-0">NHSX is a new joint unit that will drive digital transformation in health and social care.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </section>
+
+<section >
+<div class="nhsuk-width-container">
+<div class="nhsuk-grid-row nhsuk-promo-group nhsuk-u-padding-top-6 nhsuk-u-margin-bottom-0">
+  <div class="nhsuk-grid-column-two-thirds ">
+        <h2>Background </h2>
+  </div>      
+</div>
+<div class="nhsuk-grid-row nhsuk-promo-group nhsuk-u-padding-top-0 nhsuk-u-padding-bottom-0">
+  <div class="nhsuk-grid-column-two-thirds ">
+  
+        <p>The digital transformation of the NHS is the most important change we will make to healthcare for the next decade. But the responsibility for it is currently split between numerous organisations and teams. </p>
+        <p>We need a transformation in the way that technology is led in the NHS. NHSX brings together a new joint unit in the Department of Health and Social Care and NHS England to drive digital transformation and lead policy, implementation and change.</p>
+        <p><a href="/prototype-3/version-2/background">Find out more about our background </a></p>
+
+  </div>
+
+  <div class="nhsuk-grid-column-one-third ">
+<h4 class="nhsuk-body-xl">&ldquo;One unit to set national policy, remove red tape and create a culture of innovation to allow the best innovations to flourish.&rdquo;</h4>
+<p class="nhsuk-body-s">Matt Hancock, Health Secretary</p>
+  </div>
+
+</div>
+</div>
+</section>
+
+
+<section style="background-color:#fff;">
+<div class="nhsuk-width-container">
+<div class="nhsuk-grid-row nhsuk-promo-group nhsuk-u-padding-top-6 nhsuk-u-padding-bottom-4">
+  <div class="nhsuk-grid-column-two-thirds ">
+        <h2>What we do </h2>
+        <p>We are here to:</p>
+        <ul>
+            <li>speed up the transformation of the NHS and social care, driven by technology, in line with the <a href="https://www.england.nhs.uk/long-term-plan/">NHS long term plan</a> and the Health Secretary’s <a href="https://www.gov.uk/government/publications/the-future-of-healthcare-our-vision-for-digital-data-and-technology-in-health-and-care/the-future-of-healthcare-our-vision-for-digital-data-and-technology-in-health-and-care">tech vision</a></li> 
+            <li>support people to stay well and drive their own care by giving them easy access to great digital services and their data </li>
+            <li>enable NHS staff to focus on the patient, by reducing other demands on their time through the use of technology </li>
+            <li>make the NHS the best place for health and care tech entrepreneurs by creating an environment where innovation flourishes</li> 
+            <li>simplify the decision-making process so that digital programmes advance rapidly </li>
+            <li>focus forensically on user needs: both of the public and of staff in the NHS and in social care </li>
+            <li>make sure that patients’ data is curated so that citizens are confident in its security and stewardship, and that the data’s value is realised to their benefit </li>
+            <li>make sure that the NHS uses the opportunities of digital technology to meet growing demand </li>
+            <li>accelerate the use of the best technology to make sure that the NHS is a brilliant place to work</li>
+         </ul>   
+
+                <p><a href="/prototype-3/version-2/what-we-do">Find out more about what we do </a></p> 
+  </div>
+
+</div>
+</div>
+</section>
+
+<section >
+<div class="nhsuk-width-container">
+<div class="nhsuk-grid-row nhsuk-promo-group nhsuk-u-padding-top-2 nhsuk-u-padding-bottom-0">
+  <div class="nhsuk-grid-column-two-thirds ">
+        <h2>How we work  </h2>
+        <ul>
+            <li>We seek to understand as well as be understood, and listen and communicate clearly</li>
+            <li>We encourage everyone to contribute their skills, knowledge and experience.  Everyone’s voice is equal and respected</li>
+            <li>We are user-centred and we work openly and with a wide range of partners because we recognise that will deliver better outcomes</li> 
+            <li>We value ambition, are open to learning and new ideas and support people to innovate</li>
+            <li>We work collaboratively, beyond job roles and across teams</li>
+            <li>We recognise and celebrate success and take ownership of problems and solutions</li>
+            <li>We prioritise wellness, and help one another to find joy and take pride in our work. We address poor behaviour and listen to and act on concerns</li>
+         </ul>   
+
+                <p><a href="/prototype-3/version-2/how-we-work">Find out more about how we work </a></p> 
+
+  </div>
+
+</div>
+</div>
+</section>
+
+<section style="background-color:#fff;">
+<div class="nhsuk-width-container nhsuk-u-padding-top-6 nhsuk-u-padding-bottom-2">
+<h2>Key information and tools</h2>
+<div class="nhsuk-grid-row nhsuk-promo-group nhsuk-u-padding-top-2 nhsuk-u-padding-bottom-2">
+  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="https://www.gov.uk/government/publications/the-future-of-healthcare-our-vision-for-digital-data-and-technology-in-health-and-care/the-future-of-healthcare-our-vision-for-digital-data-and-technology-in-health-and-care" style="background-color:#f0f4f5;">
+        <div class="nhsuk-promo__content">
+          <h3 class="nhsuk-promo__heading">The tech vision</h3>
+          <p class="nhsuk-promo__description">The future of healthcare: our vision for digital, data and technology in health and care </p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="https://www.england.nhs.uk/digitaltechnology/" style="background-color:#f0f4f5;">
+        <div class="nhsuk-promo__content">
+          <h3 class="nhsuk-promo__heading">Digital transformation </h3>
+          <p class="nhsuk-promo__description">NHS England’s digital technology pages on empowering people, connected digital systems and more</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="https://developer.nhs.uk/" style="background-color:#f0f4f5;">
+        <div class="nhsuk-promo__content">
+          <h3 class="nhsuk-promo__heading">NHS developer network </h3>
+          <p class="nhsuk-promo__description">NHS Digital’s network has technical information, software tools, source code and data for software developers</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<div class="nhsuk-grid-row nhsuk-promo-group nhsuk-u-padding-top-2 nhsuk-u-padding-bottom-2">
+  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="https://www.gov.uk/government/publications/the-future-of-healthcare-our-vision-for-digital-data-and-technology-in-health-and-care/the-future-of-healthcare-our-vision-for-digital-data-and-technology-in-health-and-care" style="background-color:#f0f4f5;">
+        <div class="nhsuk-promo__content">
+          <h3 class="nhsuk-promo__heading">NHS digital service manual </h3>
+          <p class="nhsuk-promo__description">This manual helps NHS teams design and build consistent, usable services that put people first </p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="https://www.england.nhs.uk/digitaltechnology/" style="background-color:#f0f4f5;">
+        <div class="nhsuk-promo__content">
+          <h3 class="nhsuk-promo__heading">Transforming digital health </h3>
+          <p class="nhsuk-promo__description">NHS.UK presentations, updates, discussion forums and other resources from the Empower the Person programme</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="https://www.youtube.com/playlist?list=PLnhASgDToTkuKZuCrO9-MO62Zz6eKpR9H" style="background-color:#f0f4f5;">
+        <div class="nhsuk-promo__content">
+          <h3 class="nhsuk-promo__heading">NHS70 innovation videos  </h3>
+          <p class="nhsuk-promo__description">The NHS is harnessing the power of information and technology to empower people to take control of their own health</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+ 
+  </div>
+</div>
+
+</div>
+</section>
+
+
+<section >
+<div class="nhsuk-width-container">
+<div class="nhsuk-grid-row  nhsuk-u-padding-top-6 ">
+  <div class="nhsuk-grid-column-one-half">
+        <h2>News articles</h2>
+        </div>
+</div>
+<div class="nhsuk-grid-row nhsuk-promo-group nhsuk-u-padding-top-1 nhsuk-u-padding-bottom-6 nhsuk-u-margin-bottom-5">
+  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item" >
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="https://www.gov.uk/government/news/nhsx-new-joint-organisation-for-digital-data-and-technology" >
+        <img class="nhsuk-promo__img" src="https://assets.publishing.service.gov.uk/media/5c6be488e5274a72b74654e8/computer-interface-with-doctor.jpg" alt="">
+        <div class="nhsuk-promo__content">
+          <h3 class="nhsuk-promo__heading">NHSX: new joint organisation for digital, data and technology </h3>
+          <p class="nhsuk-promo__description">News story about taking forward digital transformation in the NHS</p>
+
+        </div>
+      </a>
+    </div>
+  </div>
+    <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item" >
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="https://healthtech.blog.gov.uk/2019/03/21/all-the-things-we-like-about-for-the-cdei-strategy/" >
+        <img class="nhsuk-promo__img" src="https://healthtech.blog.gov.uk/wp-content/uploads/sites/224/2019/03/AI-blog-image-620x413.png" alt="">
+        <div class="nhsuk-promo__content">
+          <h3 class="nhsuk-promo__heading">All the things we like about the CDEI’s new strategy</h3>
+          <p class="nhsuk-promo__description">Blog about the Centre for Data Ethics and Innovation</p>
+
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item" >
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="https://www.england.nhs.uk/blog/ethics-is-our-competitive-advantage-how-the-nhs-can-lead-the-world-in-ai-based-healthtech/" >
+        <img class="nhsuk-promo__img" src="https://healthtech.blog.gov.uk/wp-content/uploads/sites/224/2018/12/01b-768x432.jpg" alt="">
+        <div class="nhsuk-promo__content">
+          
+          <h3 class="nhsuk-promo__heading">Ethics is our competitive advantage</h3>
+                  <p class="nhsuk-promo__description">Blog about how the NHS can lead the world in AI-based healthtech</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+
+<section style="background-color:#fff;" >
+<div class="nhsuk-width-container">
+<div class="nhsuk-grid-row nhsuk-u-padding-top-6 ">
+<div class="nhsuk-grid-column-one-half nhsuk-promo-group__item" >
+<h2>Video</h2>
+</div>
+</div>
+<div class="nhsuk-grid-row nhsuk-promo-group nhsuk-u-padding-top-2 nhsuk-u-padding-bottom-8">
+
+  <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item" >
+    <div class="nhsuk-promo">
+        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/aN0Vt9DUEwM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="nhsuk-promo__content" style="background-color:#f0f4f5;">
+          <h3>NHS70 Innovation – The Digital Age</h3>
+          <p class="nhsuk-promo__description">70 years of the NHS. A history of innovation. An exciting digital future. </p>
+          <p><a href="https://www.youtube.com/playlist?list=PLnhASgDToTkuKZuCrO9-MO62Zz6eKpR9H">Watch more NHS70 innovation videos on YouTube</a></p>
+        </div>
+   
+    </div>
+  </div>
+  <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item" >
+    <div class="nhsuk-promo">
+        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/Q2vRDG-xVvw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="nhsuk-promo__content" style="background-color:#f0f4f5;">
+          <h3 >How will NHS.UK transform people’s experience of NHS services?</h3>
+          <p class="nhsuk-promo__description">NHS England’s Chief Digital Officer, Juliet Bauer, explains how NHS.UK will be an enabling platform. </p>
+        </div>
+   
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+
+
+<section >
+<div class="nhsuk-width-container nhsuk-u-padding-top-2 nhsuk-u-padding-bottom-5 ">
+<h2>Find out more  </h2>
+<ul class="nhsuk-list-signage nhsuk-list-signage--two-columns" style="margin-top:24px;margin-bottom:24px;">
+                      <li><a href="https://digitalhealth.blog.gov.uk/">Digital health and social care blog (GOV.UK)
+                      <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/static/nhsuk_base/img/icon-chevron-right-grey.svg" xlink:href="">
+                        </image></svg></a></li>
+                        <li><a href="https://digital.nhs.uk/blog/transformation-blog">Digital transformation blog (NHS Digital)<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                  <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/assets/images/icons/icon-chevron-right-grey.png" xlink:href="">
+                </image></svg></a></li>
+                <li><a href="https://healthtech.blog.gov.uk/">Technology in the NHS blog (GOV.UK)<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+          <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/assets/images/icons/icon-chevron-right-grey.png" xlink:href="">
+        </image></svg></a></li>
+                
+            </ul>
+
+</div>
+</section>
+
+
+
+
+
+
+<section style="background-color:#fff;">
+<div class="nhsuk-width-container">
+<div class="nhsuk-grid-row nhsuk-promo-group nhsuk-u-padding-top-6 nhsuk-u-padding-bottom-4 nhsuk-u-margin-bottom-0">
+
+  <div class="nhsuk-grid-column-two-thirds ">
+        <h2 class="nhsuk-u-margin-bottom-0">Get involved</h2>
+        <p class="nhsuk-body-l ">We want to hear from you </p>
+        <p>If you work in tech in the NHS, tell us what your user needs are and how things need to change. We’re keen to hear from you - and from healthtech innovators - and to showcase and build on the work of people building great tools and services.</p>
+        <ul>
+            <li>Twitter: <a href="https://twitter.com/NHSX">follow us at @NHSX</a></li>
+            <li>Email: <a href="">nhsx@nhs.net</a></li>
+         </ul>   
+  </div>
+
+</div>
+</div>
+</section>
+
+
+
+
+
+
+        <div class="nhsuk-width-container">
+
+
+        <div class="nhsuk-grid-row">
+
+        </div>
+
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+    </div>
+  </div>
+</section>
+  </main>
+
+  
+  </div>
+{% endblock %}
