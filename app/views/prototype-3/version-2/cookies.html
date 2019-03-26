@@ -1,0 +1,190 @@
+<!-- 
+ADDING CUSTOM CSS
+Add your custom CSS/Sass to /app/assets/sass/main.scss
+-->
+
+
+<!-- Extends the layout from /app/views/layouts/layout.html -->
+{% extends 'layouts/layout-3.html' %}
+
+<!-- Set the page title inside this block -->
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+<!-- Breadcrumb goes inside this block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+
+  ],
+  href: "/prototype-3/version-2-home",
+  text: "Home"
+}) }}
+{% endblock %}
+
+{% block content %}
+          <main class="nhsuk-main-wrapper {{ mainClasses }} nhsuk-main-home " id="main-content" role="main">
+
+
+
+<section>
+<div class="nhsuk-width-container nhsuk-u-margin-top-8">
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-u-margin-bottom-5">Cookies</h1>
+          <p>The NHS digital service manual puts small files (known as "cookies") onto your computer to collect information about how you browse the site.</p>  
+          <p>Cookies are used to:</p>
+          <ul>
+      <li>measure how you use the website so it can be updated and improved based on your needs</li>
+      <li>remember the notifications you’ve seen so that we don’t show them to you again</li>
+    </ul>
+    <p>NHS digital service manual cookies aren’t used to identify you personally.</p>
+
+    <h2>Cookies we use to make the site work better</h2>
+
+    <div class="nhsuk-table-responsive">
+    <table class="nhsuk-table">
+      <thead class="nhsuk-table__head">
+        <tr class="nhsuk-table__row">
+          <th class="nhsuk-table__header" scope="col">Name</th>
+          <th class="nhsuk-table__header" scope="col">Purpose</th>
+          <th class="nhsuk-table__header" scope="col">Expires</th>
+        </tr>
+      </thead>
+      <tbody class="nhsuk-table__body">
+        <tr class="nhsuk-table__row">
+          <td class="nhsuk-table__cell">sessionid</td>
+          <td class="nhsuk-table__cell ">Tracks your journey through the site</td>
+          <td class="nhsuk-table__cell ">When you close the browser</td>
+        </tr>
+        <tr class="nhsuk-table__row">
+          <td class="nhsuk-table__cell">csrftoken</td>
+          <td class="nhsuk-table__cell ">Helps protect the site from attacks</td>
+          <td class="nhsuk-table__cell ">365 days</td>
+        </tr>
+        <tr class="nhsuk-table__row">
+          <td class="nhsuk-table__cell">manual_seen_cookie_message</td>
+          <td class="nhsuk-table__cell ">Tells you we’ve stored cookies on your first visit</td>
+          <td class="nhsuk-table__cell ">1 month</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <h2>Cookies to measure website use (Google Analytics)</h2>
+  <p>We use Google Analytics software to collect information about how you use the NHS digital service manual. We do this to help make sure the site is meeting the needs of its users and to help us make improvements.</p>
+  <p>We have opted to make everything we send to Google anonymous - this means you can’t be identified.</p>
+  <p>Google Analytics stores information about:</p>
+  <ul>
+      <li>the pages you visit on the NHS digital service manual</li>
+      <li>how long you spend on each page</li>
+      <li>how you got to the site</li>
+      <li>what you click on while you’re using the site</li>
+    </ul>
+<p>We don’t allow Google to use or share our analytics data.</p>
+<p>Google Analytics sets the following cookies:</p>
+<div class="nhsuk-table-responsive">
+    <table class="nhsuk-table">
+      <caption class="nhsuk-table__caption">TBD</caption>
+      <thead class="nhsuk-table__head">
+        <tr class="nhsuk-table__row">
+          <th class="nhsuk-table__header" scope="col">Name</th>
+          <th class="nhsuk-table__header" scope="col">Purpose</th>
+          <th class="nhsuk-table__header" scope="col">Expires</th>
+        </tr>
+      </thead>
+      <tbody class="nhsuk-table__body">
+        <tr class="nhsuk-table__row">
+          <td class="nhsuk-table__cell">_ga</td>
+          <td class="nhsuk-table__cell ">This helps us count how many people visit the NHS digital service manual by tracking if you’ve visited before</td>
+          <td class="nhsuk-table__cell ">2 years</td>
+        </tr>
+        <tr class="nhsuk-table__row">
+          <td class="nhsuk-table__cell">_gid</td>
+          <td class="nhsuk-table__cell ">This helps us count how many people visit the NHS digital service manual by tracking if you’ve visited before</td>
+          <td class="nhsuk-table__cell ">24 hours</td>
+        </tr>
+        <tr class="nhsuk-table__row">
+          <td class="nhsuk-table__cell">_gat and _dc_gtm</td>
+          <td class="nhsuk-table__cell ">These are used to limit the rate of page view requests to Google Analytics</td>
+          <td class="nhsuk-table__cell ">1 minute to 10 minutes</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <p>If you browse the web without using javascript, Google Analytics will use something called a pixel gif graphic instead of a cookie. This collects information about your device and behaviour.</p>
+
+<p>You can <a href="https://tools.google.com/dlpage/gaoptout">opt out of Google Analytics cookies.</a></p>
+<h2>How to change your cookie settings</h2>
+<p>Most web browsers allow some control of most cookies through the browser settings. To find out more about cookies, including how to see what cookies have been set, visit <a href="https://www.aboutcookies.org/">www.aboutcookies.org</a> or <a href="http://www.allaboutcookies.org/">www.allaboutcookies.org.</a></p>
+
+<p>Find out how to manage cookies on:</p>
+<ul>
+      <li><a href="https://support.apple.com/kb/ph21411?locale=en_US">Apple Safari</a></li>
+      <li><a href="https://support.google.com/accounts/answer/61416?co=GENIE.Platform%3DDesktop&amp;hl=en">Google Chrome</a></li>
+      <li><a href="https://privacy.microsoft.com/en-us/windows-10-microsoft-edge-and-privacy">Microsoft Edge</a></li>
+      <li><a href="https://support.microsoft.com/en-gb/help/17442/windows-internet-explorer-delete-manage-cookies">Microsoft Internet Explorer</a></li>
+      <li><a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences">Mozilla Firefox</a></li>
+      <li><a href="https://www.opera.com/help/tutorials/security/privacy/">Opera</a></li>
+    </ul>
+
+
+
+
+<p>If you need to contact us about the use of cookies, email <a href="mailto:enquiries@nhsdigital.nhs.uk">enquiries@nhsdigital.nhs.uk</a>.</p>
+
+
+
+
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+
+  </div>
+</div>
+</div>
+
+
+
+</section>
+
+
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="nhsuk-width-container">
+
+
+        <div class="nhsuk-grid-row">
+
+        </div>
+
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+    </div>
+  </div>
+</section>
+  </main>
+
+  
+  </div>
+{% endblock %}

@@ -74,3 +74,32 @@
       column-gap: 16px;
   }
 }
+
+.ogl-text {
+  font-weight: 400;
+  font-size: 14px;
+  font-size: .875rem;
+  line-height: 1.71429;
+  color: #425563;
+  margin-bottom: 0;
+  padding-bottom: 24px;
+}
+
+.ogl-footer {
+  background-color: #d8dde0;
+}
+
+
+.nhsuk-table-responsive {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  display: block;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.nhsuk-table-responsive .nhsuk-table {
+  margin: 0;
+}
