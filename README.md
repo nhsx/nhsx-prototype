@@ -20,3 +20,7 @@ You must protect user privacy at all times, even when using prototypes. Prototyp
 
 - <a href="http://nhsuk-prototype-kit.azurewebsites.net/docs/install/simple">Install guide (non technical)</a>
 - <a href="http://nhsuk-prototype-kit.azurewebsites.net/docs/install/advanced">Developer friendly install guide (technical)</a>
+
+## License
+
+The codebase is released under the MIT License, unless stated otherwise. This covers both the codebase and any sample code in the documentation. 
