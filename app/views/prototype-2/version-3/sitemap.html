@@ -1,0 +1,107 @@
+<!-- 
+ADDING CUSTOM CSS
+Add your custom CSS/Sass to /app/assets/sass/main.scss
+-->
+
+
+<!-- Extends the layout from /app/views/layouts/layout.html -->
+{% extends 'layouts/layout-2-v3.html' %}
+
+<!-- Set the page title inside this block -->
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+<!-- Breadcrumb goes inside this block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+
+  ],
+  href: "/prototype-2/version-3",
+  text: "Home"
+}) }}
+{% endblock %}
+
+{% block content %}
+          <main class="nhsuk-main-wrapper {{ mainClasses }} nhsuk-main-home " id="main-content" role="main">
+
+
+
+<section>
+<div class="nhsuk-width-container nhsuk-u-margin-top-8">
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-u-margin-bottom-5">Sitemap</h1>
+
+
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Who we are</a></li>
+            <li><a href="">What we do</a></li>
+            <li><a href="">How we work</a></li>
+            <li><a href="">Key information and tools</a></li>
+                <ul>
+                    <li><a href="">Key documents</a></li>
+                    <li><a href="">Apps and tools for patient care</a></li>
+                    <li><a href="">Designing and building products and services</a></li>
+                    <li><a href="">Policy, strategy and national programmes</a></li>
+                    <li><a href="">Blogs and updates</a></li>
+                </ul>
+            <li><a href="">Get involved</a></li>
+            <li><a href="">Cookies</a></li>
+            <li><a href="">Terms and conditions</a></li>
+            <li><a href="">Privacy policy</a></li>
+        </ul>    
+    
+
+
+
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+
+  </div>
+</div>
+</div>
+
+
+
+</section>
+
+
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="nhsuk-width-container">
+
+
+        <div class="nhsuk-grid-row">
+
+        </div>
+
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+    </div>
+  </div>
+</section>
+  </main>
+
+  
+  </div>
+{% endblock %}
