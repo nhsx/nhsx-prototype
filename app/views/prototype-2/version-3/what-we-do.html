@@ -1,0 +1,161 @@
+<!-- 
+ADDING CUSTOM CSS
+Add your custom CSS/Sass to /app/assets/sass/main.scss
+-->
+
+
+<!-- Extends the layout from /app/views/layouts/layout.html -->
+{% extends 'layouts/layout-2.html' %}
+
+<!-- Set the page title inside this block -->
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+<!-- Breadcrumb goes inside this block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+
+  ],
+  href: "/prototype-2/version-2",
+  text: "Home"
+}) }}
+{% endblock %}
+
+{% block content %}
+          <main class="nhsuk-main-wrapper {{ mainClasses }} nhsuk-main-home " id="main-content" role="main">
+
+
+
+<section>
+<div class="nhsuk-width-container nhsuk-u-margin-top-8">
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <h1>What we do</h1>
+            <p class="nhsuk-body-l ">NHSX exists to make sure patients and staff have the digital technology they need. </p>
+
+            <p>We are here to:</p>
+            <ul>
+                <li>use technology to speed up the transformation of the NHS and social care - for patients and staff</li>
+                <li>use the opportunities of digital technology to meet growing demand in the NHS</li>
+                <li>simplify decision-making so that digital programmes advance rapidly</li>
+                <li>focus on the needs of the public and of staff</li>
+                <li>make it easier for NHS staff to focus on their patients</li>
+                <li>give people easy access to great digital services and their data to help them stay well and manage their own care</li>
+                <li>make sure that patients’ data is kept secure and used well for their benefit</li>
+                <li>make the NHS is the best place for health and care tech entrepreneurs</li>
+            </ul>   
+            
+            <h2>Our responsibilities</h2>
+
+            <h3>Coordination and consistency</h3>
+
+            <ul>
+              <li>Setting national policy for NHS technology, digital and data (including data-sharing and transparency)</li>
+              <li>Setting the strategy, developing best practice guidance, coordinating activities across the arms-length bodies and national or central programmes</li>
+              <li>Becoming a single point of accountability for national digital transformation programmes and the oversight of NHS Digital</li>
+            </ul>  
+
+            <h3>Setting standards</h3>
+            <ul>
+              <li>Developing, agreeing and mandating clear standards (on user experience, open standards, information governance, open source etc) for the use of technology in the NHS</li>
+              <li>Making sure that NHS systems become interoperable and that the NHS can incorporate the latest innovations without breaking the technical plumbing underneath</li>
+            </ul> 
+
+            <h3>Driving implementation</h3>
+            <ul>
+              <li>Helping to improve clinical care by delivering agile, user-focused projects</li>
+              <li>Developing digital care pathways and solving administrative challenges across the NHS</li>
+              <li>Delivering APIs and documentation to empower developers and data analysts across the NHS and the health tech industry</li>
+              <li>Driving digital and tech maturity in local NHS organisations</li>
+            </ul>  
+
+            <h3>Radical innovation</h3>
+            <ul>
+              <li>Supporting the use of new, emergent and effective technologies by the NHS, both by working with industry and via its own prototyping and development capability</li>
+            </ul>  
+
+            <h3>Common technologies and services</h3>
+            <ul>
+              <li>Making sure that common technologies and services, including the <a href="https://digital.nhs.uk/services/nhs-app">NHS App</a>, are designed so that trusts and surgeries don’t have to reinvent the wheel each time</li>
+              <li>Making sure that that all source code is open by default so that anyone who wants to write code for the NHS can see what we need</li>
+            </ul>
+
+            <h3>Reforming procurement</h3>
+            <ul>
+              <li>Helping the NHS buy the right technology through the application of technology standards, streamlined spend controls and new procurement frameworks that support our standards</li>
+            </ul>  
+
+
+            <h3>Cyber policy</h3>
+            <ul>
+              <li>Setting national strategy and mandating cyber security standards, so that NHS and social care systems have security designed in from the start  </li>
+            </ul>  
+
+            <h3>Digital capability</h3>
+            <ul>
+              <li>Championing and developing digital training, skills and culture so our staff are digital-ready </li>
+            </ul>  
+
+            <h3>Governance</h3>
+            <ul>
+              <li>Delivering an efficient process for technology spend, domain name management, website security</li>
+              <li>Reviewing the effectiveness of governance arrangements regularly</li>
+            </ul>  
+
+
+             
+
+
+        <p class="nhsuk-u-margin-top-8"><a href="/prototype-2/version-2/how-we-work">Find out how we work</a></p>
+
+
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+
+  </div>
+</div>
+</div>
+
+
+
+</section>
+
+
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="nhsuk-width-container">
+
+
+        <div class="nhsuk-grid-row">
+
+        </div>
+
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+    </div>
+  </div>
+</section>
+  </main>
+
+  
+  </div>
+{% endblock %}

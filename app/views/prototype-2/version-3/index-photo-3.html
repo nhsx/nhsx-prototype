@@ -1,0 +1,172 @@
+<!-- 
+ADDING CUSTOM CSS
+Add your custom CSS/Sass to /app/assets/sass/main.scss
+-->
+
+
+<!-- Extends the layout from /app/views/layouts/layout.html -->
+{% extends 'layouts/layout-2.html' %}
+
+<!-- Set the page title inside this block -->
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+<!-- Breadcrumb goes inside this block -->
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+          <main class="nhsuk-main-wrapper {{ mainClasses }} nhsuk-main-home " id="main-content" role="main">
+
+                <section class="nhsuk-hero nhsuk-hero--image nhsuk-hero--image-description " style="background-image: url('/images/hero-human-3.png');background-color:white;">
+                    <div class="nhsuk-hero__overlay nhsuk-u-margin-bottom-8 " >
+                        <div class="nhsuk-width-container">
+                        <div class="nhsuk-grid-row">
+                            <div class="nhsuk-grid-column-two-thirds">
+                            <div class="nhsuk-hero-content " style="background-color: #003087">
+                                <h1 class="nhsuk-u-margin-bottom-3 nhsuk-heading-l">We’re here to improve patient care and health outcomes</h1>
+                                <!--<p class="nhsuk-body-l nhsuk-u-margin-bottom-0">NHSX is a new joint unit in the Department of Health and Social Care and NHS England that will drive digital transformation in health and social care.</p>-->
+                                <span class="nhsuk-hero__arrow" aria-hidden="true" style="border: solid 10px #003087;width: 16px;height: 16px;"></span>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </section>
+
+
+
+                    
+
+<section >
+<div class="nhsuk-width-container nhsuk-u-padding-top-6 nhsuk-u-padding-bottom-0">
+
+<div class="nhsuk-grid-row nhsuk-promo-group nhsuk-u-padding-top-2 nhsuk-u-padding-bottom-0">
+  <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="/prototype-2/version-2/background" >
+        <div class="nhsuk-promo__content">
+          <h3 class="nhsuk-promo__heading">Background</h3>
+          <p class="nhsuk-promo__description">NHSX is a new unit that will drive forward the digital transformation of health and care.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="/prototype-2/version-2/what-we-do" >
+        <div class="nhsuk-promo__content">
+          <h3 class="nhsuk-promo__heading">What we do</h3>
+          <p class="nhsuk-promo__description">We’re here to improve patient care and outcomes by giving NHS patients and staff the technology they need.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="nhsuk-grid-row nhsuk-promo-group nhsuk-u-padding-top-0 nhsuk-u-padding-bottom-6">
+  <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="/prototype-2/version-2/how-we-work" >
+        <div class="nhsuk-promo__content">
+          <h3 class="nhsuk-promo__heading">How we work</h3>
+          <p class="nhsuk-promo__description">Our culture and values.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="/prototype-2/version-2/key-information" >
+        <div class="nhsuk-promo__content">
+          <h3 class="nhsuk-promo__heading">Key information and tools</h3>
+          <p class="nhsuk-promo__description">Standards, guidance and support for digital teams.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+</div>
+</section>
+
+<section style="background-color:#fff;">
+<div class="nhsuk-width-container">
+<div class="nhsuk-grid-row nhsuk-u-padding-top-6 ">
+<div class="nhsuk-grid-column-one-half nhsuk-promo-group__item" >
+<h2>Video</h2>
+</div>
+</div>
+<div class="nhsuk-grid-row nhsuk-promo-group nhsuk-u-padding-top-2 nhsuk-u-padding-bottom-6">
+
+  <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item" >
+    <div class="nhsuk-promo" style="background-color:#f0f4f5;">
+        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/aN0Vt9DUEwM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="nhsuk-promo__content" style="background-color:#f0f4f5;">
+          <h3>NHS70 Innovation – The Digital Age</h3>
+          <p class="nhsuk-promo__description">70 years of the NHS. A history of innovation. An exciting digital future. </p>
+          <p><a href="https://www.youtube.com/playlist?list=PLnhASgDToTkuKZuCrO9-MO62Zz6eKpR9H">Watch more NHS70 innovation videos on YouTube</a></p>
+        </div>
+   
+    </div>
+  </div>
+  <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item" >
+    <div class="nhsuk-promo" style="background-color:#f0f4f5;">
+        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/DvpQA9AL2Ng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="nhsuk-promo__content" style="background-color:#f0f4f5;">
+          <h3 >Local data sharing partnerships</h3>
+          <p class="nhsuk-promo__description">Data can save lives, so the NHS is working to better join it up across local areas. </p>
+        </div>
+   
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+
+
+
+<section >
+<div class="nhsuk-width-container">
+<div class="nhsuk-grid-row nhsuk-promo-group nhsuk-u-padding-top-2 nhsuk-u-padding-bottom-0 nhsuk-u-margin-bottom-0">
+
+  <div class="nhsuk-grid-column-two-thirds ">
+        <h2 class="nhsuk-u-margin-bottom-0">Get involved</h2>
+        <p class="nhsuk-body-l ">We want to hear from you </p>
+        <p>If you work in tech in the NHS, tell us what your user needs are and how things need to change. We’re keen to hear from you - and from healthtech innovators - and to showcase and build on the work of people building great tools and services.</p>
+        <ul>
+            <li>Twitter: <a href="https://twitter.com/NHSX">follow us at @NHSX</a></li>
+            <li>Email: <a href="">nhsx@nhs.net</a></li>
+         </ul>   
+  </div>
+
+</div>
+</div>
+</section>
+
+
+
+
+
+
+        <div class="nhsuk-width-container">
+
+
+        <div class="nhsuk-grid-row">
+
+        </div>
+
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+    </div>
+  </div>
+</section>
+  </main>
+
+  
+  </div>
+{% endblock %}
