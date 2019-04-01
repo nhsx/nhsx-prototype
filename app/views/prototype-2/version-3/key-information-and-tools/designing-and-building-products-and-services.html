@@ -1,0 +1,120 @@
+<!-- 
+ADDING CUSTOM CSS
+Add your custom CSS/Sass to /app/assets/sass/main.scss
+-->
+
+
+<!-- Extends the layout from /app/views/layouts/layout.html -->
+{% extends 'layouts/layout-2-v3.html' %}
+
+<!-- Set the page title inside this block -->
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+<!-- Breadcrumb goes inside this block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+      {
+  href: "/prototype-2/version-3",
+  text: "Home"
+    }
+
+  ],
+  href: "/prototype-2/version-3/key-information-and-tools",
+  text: "Key information and tools"
+}) }}
+{% endblock %}
+
+{% block content %}
+          <main class="nhsuk-main-wrapper {{ mainClasses }} nhsuk-main-home " id="main-content" role="main">
+
+<section>
+<div class="nhsuk-width-container nhsuk-u-margin-top-8">
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <h1 >Designing and building products and services</h1>
+  </div>
+</div>
+</div>    
+</section>
+<section>
+<div class="nhsuk-width-container nhsuk-u-margin-top-0">
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+<h3>Code of conduct for data-driven health and care technology</h3>
+<p>The <a href="https://www.gov.uk/government/publications/code-of-conduct-for-data-driven-health-and-care-technology/initial-code-of-conduct-for-data-driven-health-and-care-technology">code of conduct</a> (Department of Health and Social Care, 2019) sets out what is expected of people developing, deploying and using data-driven technologies.</p>
+
+<h3>Evidence standards framework for digital health technologies</h3>
+<p>The National Institute for Health and Care Excellence (NICE) has worked with partners to develop a <a href="https://www.nice.org.uk/about/what-we-do/our-programmes/evidence-standards-framework-for-digital-health-technologies">standards framework</a> to make sure new technologies are clinically effective and offer economic value.</p>
+
+<h3>NHS developer network</h3>
+<p>NHS Digital's <a href="https://developer.nhs.uk/">NHS developer network</a> includes technical information, software tools, source code and data for developers who are designing and building software for use in health and social care.</p>
+
+<h3>NHS digital service manual</h3>
+<p>The <a href="https://beta.nhs.uk/service-manual/">digital service manual</a> helps NHS teams design and build consistent, usable digital services that put people first. It includes:</p>
+<ul>
+    <li>the NHS.UK frontend library</li>
+    <li>prototyping kit</li>
+    <li>design principles</li>
+    <li>UI styles, patterns and components</li>
+    <li>content style guide</li>
+    <li>accessibility and other practice guidance</li>
+</ul>    
+
+
+
+
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+
+      <div class="app-u-border-top">
+      <h3>Key information and tools</h3>
+      <ul>
+        <li><a href="/prototype-2/version-3/key-information-and-tools/key-documents">Key documents</a></li>
+        <li><a href="/prototype-2/version-3/key-information-and-tools/apps-and-tools">Apps and tools for patient care</a></li>
+        <li><a href="/prototype-2/version-3/key-information-and-tools/designing-and-building-products-and-services">Designing and building products and services</a></li>
+        <li><a href="/prototype-2/version-3/key-information-and-tools/policy-strategy-and-national-programmes">Policy, strategy and national programmes</a></li>
+        <li><a href="/prototype-2/version-3/key-information-and-tools/blogs-and-updates">Blogs and updates</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="nhsuk-width-container">
+
+
+        <div class="nhsuk-grid-row">
+
+        </div>
+
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+    </div>
+  </div>
+</section>
+  </main>
+
+  
+  </div>
+{% endblock %}

@@ -1,0 +1,164 @@
+<!-- 
+ADDING CUSTOM CSS
+Add your custom CSS/Sass to /app/assets/sass/main.scss
+-->
+
+
+<!-- Extends the layout from /app/views/layouts/layout.html -->
+{% extends 'layouts/layout-2-v3.html' %}
+
+<!-- Set the page title inside this block -->
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+<!-- Breadcrumb goes inside this block -->
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+
+  ],
+  href: "/prototype-2/version-3",
+  text: "Home"
+}) }}
+{% endblock %}
+
+{% block content %}
+          <main class="nhsuk-main-wrapper {{ mainClasses }} nhsuk-main-home " id="main-content" role="main">
+
+
+
+<section>
+<div class="nhsuk-width-container nhsuk-u-margin-top-8">
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <h1 class="nhsuk-u-margin-bottom-5">Key information and tools</h1>
+            <p class="nhsuk-body-l nhsuk-u-padding-top-0">Standards, guidance and support for digital teams. </p>
+
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+
+  </div>
+</div>
+</div>
+</section>
+
+
+<section >
+<div class="nhsuk-width-container nhsuk-u-padding-top-2 nhsuk-u-padding-bottom-0">
+
+<div class="nhsuk-grid-row nhsuk-promo-group nhsuk-u-padding-top-2 nhsuk-u-padding-bottom-0">
+  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="/prototype-2/version-3/key-information-and-tools/key-documents" >
+        <div class="nhsuk-promo__content">
+          <h3 class="nhsuk-promo__heading">Key documents</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="/prototype-2/version-3/key-information-and-tools/apps-and-tools" >
+        <div class="nhsuk-promo__content">
+          <h3 class="nhsuk-promo__heading">Apps and tools for patient care</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+    <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="/prototype-2/version-3/key-information-and-tools/designing-and-building-products-and-services" >
+        <div class="nhsuk-promo__content">
+          <h3 class="nhsuk-promo__heading">Designing and building products and services</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="nhsuk-grid-row nhsuk-promo-group nhsuk-u-padding-top-0 nhsuk-u-padding-bottom-0">
+  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="/prototype-2/version-3/key-information-and-tools/policy-strategy-and-national-programmes" >
+        <div class="nhsuk-promo__content">
+          <h3 class="nhsuk-promo__heading">Policy, strategy and national programmes</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="/prototype-2/version-3/key-information-and-tools/blogs-and-updates" >
+        <div class="nhsuk-promo__content">
+          <h3 class="nhsuk-promo__heading">Blogs and updates</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+    <!--<div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="/prototype-2/version-3/what-we-do" >
+        <div class="nhsuk-promo__content">
+          <h3 class="nhsuk-promo__heading">Designing and building products and services</h3>
+        </div>
+      </a>
+    </div>
+  </div>-->
+</div>
+
+</div>
+</section>
+                    
+<section>
+<div class="nhsuk-width-container nhsuk-u-margin-top-8">
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+
+        <p>NHSX will set national policy and develop and mandate standards and guidance, for example, on user experience, open standards, information governance, and open source.</p>
+        <p>We will be working with our partners to bring together and align existing resources and develop new ones so that’s it’s easy for commissioners, developers and, service designers to find all the information they need in the same place.</p>
+        <p>In the meantime, this section of the site signposts a range of information and tools on other organisations’ websites.</p>
+
+        <p class="nhsuk-u-margin-top-8"><a href="/prototype-2/version-3/get-involved">Get involved</a></p>
+
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+
+  </div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="nhsuk-width-container">
+
+
+        <div class="nhsuk-grid-row">
+
+        </div>
+
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+    </div>
+  </div>
+</section>
+  </main>
+
+  
+  </div>
+{% endblock %}
