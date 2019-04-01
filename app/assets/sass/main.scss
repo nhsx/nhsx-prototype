@@ -120,3 +120,14 @@
   list-style: none;
   padding-left: 0;
 }
+
+
+.nhsuk-header__navigation-link:active {
+    background-color: #212b32;
+    color: #f0f4f5;
+}
+
+
+.nhsuk-header__navigation-link:hover {
+  background-color: #212b32;
+}
